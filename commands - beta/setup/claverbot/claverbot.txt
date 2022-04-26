@@ -1,0 +1,100 @@
+{
+  "name": "cleverbot",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "lYbMp",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "claverbot-setup",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "kanal_claverbota",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "id",
+      "comparison": "1",
+      "value": "tempVars(\"kanal_claverbota\")",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nick",
+      "name": "Store Member Info"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "text",
+      "name": "Store Message Info"
+    },
+    {
+      "WhichAPI": "2",
+      "inputVarType": "1",
+      "inputVarName": "text",
+      "APIuser": "",
+      "APIkey": "",
+      "storage": "1",
+      "varName2": "cleverbot",
+      "name": "Cleverbot"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Cleverbot:",
+          "url": "",
+          "color": "RANDOM",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Odpowiedź na wiadomosc ${member}\n>  ${tempVars(\"cleverbot\")}",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "3",
+  "description": "Claver bot (/setup claver bot)"
+}
