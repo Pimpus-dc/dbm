@@ -1,0 +1,141 @@
+{
+  "name": "propozycje",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "dhPoa",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "icot_server",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "name_server",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "propozycje-kanal",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "id-kanalu",
+      "name": "Store Server Data"
+    },
+    {
+      "storage": "1",
+      "varName": "id",
+      "comparison": "1",
+      "value": "tempVars(\"id-kanalu\")",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "nazwa",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "1",
+      "infoIndex": "0",
+      "storage": "1",
+      "varName": "propozycja",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "RANDOM",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "",
+          "fields": [
+            {
+              "name": "Propozycja:",
+              "value": "\n> `${tempVars(\"propozycja\")}`",
+              "inline": "true"
+            }
+          ],
+          "author": "${tempVars(\"nazwa\")}",
+          "authorUrl": "",
+          "authorIcon": "${tempVars(\"avatar\")}",
+          "footerText": "${tempVars(\"name_server\")}",
+          "footerIconUrl": "${tempVars(\"icot_server\")}"
+        }
+      ],
+      "reply": false,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "1",
+      "varName2": "1",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "1",
+      "emoji": "4",
+      "varName2": "✅",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "1",
+      "emoji": "4",
+      "varName2": "❎",
+      "varName3": "",
+      "name": "Add Reaction"
+    }
+  ],
+  "comType": "3",
+  "description": "Propozycje"
+}

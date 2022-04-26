@@ -1,0 +1,144 @@
+{
+  "name": "setup propozycje",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "YcHnS",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "957672571044761680",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nameinne",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "957672571044761680",
+      "info": "5",
+      "storage": "1",
+      "varName2": "iconinne",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "branch": {
+        "iftrue": "2",
+        "iffalse": "0",
+        "iftrueVal": "9"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Ups...",
+          "url": "",
+          "color": "RED",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "<a:nie:957694133596737606>   **Nie stety nie posiadasz permisji** <a:nie:957694133596737606> ",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "1",
+      "editMessageVarName": "Ups",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "6",
+      "varName": "kanał",
+      "info": "1",
+      "storage": "1",
+      "varName2": "idc",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "propozycje-kanal",
+      "changeType": "0",
+      "value": "tempVars(\"idc\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```✅ Ustawiono propozycje!```",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "parameters": [
+    {
+      "name": "kanał",
+      "description": "Wybierz kanał na jakim ma wysyłać powitanie!",
+      "type": "CHANNEL",
+      "required": true,
+      "choices": null
+    }
+  ],
+  "description": "Propozycje na bocie!"
+}
