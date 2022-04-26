@@ -1,0 +1,365 @@
+{
+  "name": "Stwórz serwer",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "PNYuV",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "id",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "957672571044761680",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nameinne",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "957672571044761680",
+      "info": "5",
+      "storage": "1",
+      "varName2": "iconinne",
+      "name": "Store Server Info"
+    },
+    {
+      "channelName": "《👋》witamy",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🚩》regulamin",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《📣》ogłoszenia",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🆓》self-role",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《💜》boosty",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《😈》kary",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《📰》czat",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🍃》spam",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《😆》memy",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《📸》media ",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🎁》konkursy",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《❔》pytania ",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《💻》komendy ",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🔰》poziomy",
+      "topic": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Text Channel"
+    },
+    {
+      "channelName": "《🔊》OGÓLNY",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "《🔊》MAX 2",
+      "bitrate": "",
+      "userLimit": "2",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "《🔊》MAX 3",
+      "bitrate": "",
+      "userLimit": "3",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "《🔊》MAX 4",
+      "bitrate": "",
+      "userLimit": "4",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "《🔊》MAX 5",
+      "bitrate": "",
+      "userLimit": "5",
+      "storage": "0",
+      "varName": "",
+      "categoryID": "",
+      "reason": "",
+      "name": "Create Voice Channel"
+    },
+    {
+      "roleName": "《👮‍♂️》MODERATOR",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《🥇》WŁAŚCICIEL",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《🚫》ADMINISTATOR",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《✅》ZWERYFIKOWANY",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《❌》NIEZWERYFIKOWANY",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《🤖》BOT",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《👦》CHŁOPAK",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "roleName": "《👧》DZIEWCZYNA",
+      "hoist": "false",
+      "mentionable": "true",
+      "color": "",
+      "position": "",
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Create Role"
+    },
+    {
+      "channel": "0",
+      "varName": "kanał",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "GREEN",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"avatar\")}",
+          "description": "Pomyślnie stworzono serwer!",
+          "fields": [],
+          "author": "${tempVars(\"username\")}",
+          "authorUrl": "",
+          "authorIcon": "${tempVars(\"avatar\")}",
+          "footerText": "${tempVars(\"name\")}",
+          "footerIconUrl": "${tempVars(\"icon\")}"
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "parameters": [],
+  "description": "Bot tworzy kanały i role"
+}
