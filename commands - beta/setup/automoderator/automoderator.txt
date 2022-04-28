@@ -1,0 +1,111 @@
+{
+  "name": "kurwa",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "PDqbC",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "automoderator",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "1"
+      },
+      "name": "Check Server Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_GUILD",
+      "branch": {
+        "iftrue": "1",
+        "iffalse": "0"
+      },
+      "name": "Check Member Permissions"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nick",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "RED",
+          "timestamp": "true",
+          "imageUrl": "",
+          "thumbUrl": "${tempVars(\"member\")}",
+          "description": "${member} Nie używaj już takich słów lub linków! ",
+          "fields": [],
+          "author": "Zakazane...",
+          "authorUrl": "",
+          "authorIcon": "${tempVars(\"member\")}",
+          "footerText": "${tempVars(\"nick\")} (AutoModerator)",
+          "footerIconUrl": "${tempVars(\"member\")}"
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "1",
+  "_aliases": [
+    "jebac",
+    "jebać",
+    "Jebać",
+    "Jebac",
+    "Kórwa",
+    "Kurwa",
+    "kurwa",
+    "discord.gg/",
+    "https://",
+    "JP",
+    "JD",
+    "jp",
+    "jd",
+    "suka",
+    "chuj",
+    "chój",
+    "hój",
+    "huj",
+    "pierdol",
+    "spierdalaj"
+  ]
+}
