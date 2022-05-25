@@ -1,0 +1,206 @@
+{
+  "name": "rekrutacja",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "ZChnl",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "icona serwera",
+      "name": "Store Server Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [
+        {
+          "name": "Kliknij aby wypełnić!",
+          "type": "SUCCESS",
+          "id": "msg-button-ba77f62",
+          "row": "",
+          "url": "",
+          "emoji": "",
+          "mode": "PERSISTENT",
+          "time": "",
+          "actions": [
+            {
+              "inputs": [
+                {
+                  "label": "Ile masz lat?",
+                  "uniqID": "msg-modal-078ffe4",
+                  "type": "SHORT",
+                  "min": "1",
+                  "max": "2",
+                  "val": "1",
+                  "plholder": "Np. 15",
+                  "req": "true",
+                  "ssd": "${tempVars(\"rekrutacja\")[0]}"
+                },
+                {
+                  "label": "Jak masz na imie?",
+                  "uniqID": "msg-modal-b09ddff",
+                  "type": "SHORT",
+                  "min": "1",
+                  "max": "30",
+                  "val": "2",
+                  "plholder": "Np. Grzegorz",
+                  "req": "false",
+                  "ssd": "${tempVars(\"rekrutacja\")[1]}"
+                },
+                {
+                  "label": "Dlaczego akturat ty?",
+                  "uniqID": "msg-modal-19dc16a",
+                  "type": "SHORT",
+                  "min": "50",
+                  "max": "1000",
+                  "val": "3",
+                  "plholder": "Odpowiedz na pytanie",
+                  "req": "true",
+                  "ssd": "${tempVars(\"rekrutacja\")[2]}"
+                },
+                {
+                  "label": "Na jaką rangę się nadajesz?",
+                  "uniqID": "msg-modal-e461988",
+                  "type": "LONG",
+                  "min": "1",
+                  "max": "100",
+                  "val": "4",
+                  "plholder": "Np. Nadaję się na Administratora",
+                  "req": "true",
+                  "ssd": "${tempVars(\"rekrutacja\")[3]}"
+                }
+              ],
+              "title": "Rekrutacja",
+              "uniq": "rekrutacja",
+              "name": "Show Modal Window"
+            },
+            {
+              "text": "${tempVars(\"rekrutacja\")[1]}",
+              "text2": "null",
+              "text3": "Brak odpowiedzi na te pytanie (nie wymagane)",
+              "info": "0",
+              "storage": "1",
+              "varName": "rekrutacja23",
+              "name": "Replace Text"
+            },
+            {
+              "server": "0",
+              "varName": "",
+              "info": "5",
+              "storage": "1",
+              "varName2": "iconserv",
+              "name": "Store Server Info"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "info": "1",
+              "storage": "3",
+              "varName2": "object",
+              "name": "Store Member Info"
+            },
+            {
+              "member": "1",
+              "varName": "",
+              "info": "0",
+              "storage": "3",
+              "varName2": "member.ping",
+              "name": "Store Member Info"
+            },
+            {
+              "channel": "103",
+              "varName": "id kanalu",
+              "message": "${member}",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "",
+                  "url": "",
+                  "color": "YELLOW",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "",
+                  "fields": [
+                    {
+                      "name": "Ile masz lat:",
+                      "value": "`${tempVars(\"rekrutacja\")[0]}`",
+                      "inline": "true"
+                    },
+                    {
+                      "name": "Jak masz na imię:",
+                      "value": "`${tempVars(\"rekrutacja23\")}`",
+                      "inline": "true"
+                    },
+                    {
+                      "name": "Dlaczego akurat ty:",
+                      "value": "`${tempVars(\"rekrutacja\")[2]}`",
+                      "inline": "true"
+                    },
+                    {
+                      "name": "Na jaką range zasługujesz?",
+                      "value": "`${tempVars(\"rekrutacja\")[3]}`",
+                      "inline": "true"
+                    }
+                  ],
+                  "author": "Rekrutacja:",
+                  "authorUrl": "",
+                  "authorIcon": "${tempVars(\"iconserv\")}",
+                  "footerText": "Napisano!",
+                  "footerIconUrl": "${tempVars(\"iconserv\")}"
+                }
+              ],
+              "reply": true,
+              "ephemeral": false,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "2",
+              "varName2": "pytania",
+              "name": "Send Message"
+            }
+          ]
+        }
+      ],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "YELLOW",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Kliknij w przycisk, aby się włączył formularz.",
+          "fields": [],
+          "author": "Rekrutacja",
+          "authorUrl": "",
+          "authorIcon": "${tempVars(\"icona serwera\")}",
+          "footerText": "${server.name}",
+          "footerIconUrl": "${tempVars(\"icona serwera\")}"
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
