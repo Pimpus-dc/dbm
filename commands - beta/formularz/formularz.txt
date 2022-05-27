@@ -1,16 +1,16 @@
 {
-  "name": "rekrutacja",
+  "name": "rekrutacja1",
   "permissions": "NONE",
   "permissions2": "NONE",
   "restriction": "1",
-  "_id": "ZChnl",
+  "_id": "dvUzF",
   "actions": [
     {
       "server": "0",
       "varName": "",
       "info": "5",
       "storage": "1",
-      "varName2": "icona serwera",
+      "varName2": "icon1",
       "name": "Store Server Info"
     },
     {
@@ -29,92 +29,107 @@
           "time": "",
           "actions": [
             {
-              "inputs": [
+              "title": "Rekrutacja",
+              "textInputs": [
                 {
-                  "label": "Ile masz lat?",
-                  "uniqID": "msg-modal-078ffe4",
-                  "type": "SHORT",
-                  "min": "1",
-                  "max": "2",
-                  "val": "1",
-                  "plholder": "Np. 15",
-                  "req": "true",
-                  "ssd": "${tempVars(\"rekrutacja\")[0]}"
+                  "name": "Wpisz tutaj swój wybrany tekst",
+                  "placeholder": "Odpowiedz na to pytanie",
+                  "minLength": "15",
+                  "maxLength": "1000",
+                  "id": "rekru1",
+                  "row": "1",
+                  "style": "PARAGRAPH",
+                  "required": "true"
                 },
                 {
-                  "label": "Jak masz na imie?",
-                  "uniqID": "msg-modal-b09ddff",
-                  "type": "SHORT",
-                  "min": "1",
-                  "max": "30",
-                  "val": "2",
-                  "plholder": "Np. Grzegorz",
-                  "req": "false",
-                  "ssd": "${tempVars(\"rekrutacja\")[1]}"
+                  "name": "Wpisz tutaj swój wybrany tekst",
+                  "placeholder": "Odpowiedz na to pytanie",
+                  "minLength": "10",
+                  "maxLength": "1000",
+                  "id": "rekru2",
+                  "row": "2",
+                  "style": "PARAGRAPH",
+                  "required": "true"
                 },
                 {
-                  "label": "Dlaczego akturat ty?",
-                  "uniqID": "msg-modal-19dc16a",
-                  "type": "SHORT",
-                  "min": "50",
-                  "max": "1000",
-                  "val": "3",
-                  "plholder": "Odpowiedz na pytanie",
-                  "req": "true",
-                  "ssd": "${tempVars(\"rekrutacja\")[2]}"
+                  "name": "Wpisz tutaj swój wybrany tekst",
+                  "placeholder": "Odpowiedz na to pytanie",
+                  "minLength": "10",
+                  "maxLength": "1000",
+                  "id": "rekru3",
+                  "row": "3",
+                  "style": "PARAGRAPH",
+                  "required": "true"
                 },
                 {
-                  "label": "Na jaką rangę się nadajesz?",
-                  "uniqID": "msg-modal-e461988",
-                  "type": "LONG",
-                  "min": "1",
-                  "max": "100",
-                  "val": "4",
-                  "plholder": "Np. Nadaję się na Administratora",
-                  "req": "true",
-                  "ssd": "${tempVars(\"rekrutacja\")[3]}"
+                  "name": "Wpisz tutaj swój wybrany tekst",
+                  "placeholder": "Odpowiedz na to pytanie",
+                  "minLength": "10",
+                  "maxLength": "1000",
+                  "id": "rekru4",
+                  "row": "4",
+                  "style": "PARAGRAPH",
+                  "required": "true"
+                },
+                {
+                  "name": "Wpisz tutaj swój wybrany tekst",
+                  "placeholder": "Odpowiedz na to pytanie",
+                  "minLength": "10",
+                  "maxLength": "1000",
+                  "id": "rekru5",
+                  "row": "5",
+                  "style": "PARAGRAPH",
+                  "required": "true"
                 }
               ],
-              "title": "Rekrutacja",
-              "uniq": "rekrutacja",
-              "name": "Show Modal Window"
+              "name": "Show Modal"
             },
             {
-              "text": "${tempVars(\"rekrutacja\")[1]}",
-              "text2": "null",
-              "text3": "Brak odpowiedzi na te pytanie (nie wymagane)",
-              "info": "0",
-              "storage": "1",
-              "varName": "rekrutacja23",
-              "name": "Replace Text"
+              "channel": "0",
+              "varName": "rekru1",
+              "message": "",
+              "buttons": [],
+              "selectMenus": [],
+              "attachments": [],
+              "embeds": [
+                {
+                  "title": "",
+                  "url": "",
+                  "color": "RED",
+                  "timestamp": "false",
+                  "imageUrl": "",
+                  "thumbUrl": "",
+                  "description": "Wysłano!",
+                  "fields": [],
+                  "author": "",
+                  "authorUrl": "",
+                  "authorIcon": "",
+                  "footerText": "",
+                  "footerIconUrl": ""
+                }
+              ],
+              "reply": true,
+              "ephemeral": true,
+              "tts": false,
+              "overwrite": false,
+              "dontSend": false,
+              "editMessage": "0",
+              "editMessageVarName": "",
+              "storage": "0",
+              "varName2": "",
+              "name": "Send Message"
             },
             {
               "server": "0",
               "varName": "",
               "info": "5",
-              "storage": "1",
-              "varName2": "iconserv",
+              "storage": "3",
+              "varName2": "icon56",
               "name": "Store Server Info"
             },
             {
-              "member": "1",
-              "varName": "",
-              "info": "1",
-              "storage": "3",
-              "varName2": "object",
-              "name": "Store Member Info"
-            },
-            {
-              "member": "1",
-              "varName": "",
-              "info": "0",
-              "storage": "3",
-              "varName2": "member.ping",
-              "name": "Store Member Info"
-            },
-            {
               "channel": "103",
-              "varName": "id kanalu",
+              "varName": "953304587299848222",
               "message": "${member}",
               "buttons": [],
               "selectMenus": [],
@@ -130,31 +145,36 @@
                   "description": "",
                   "fields": [
                     {
-                      "name": "Ile masz lat:",
-                      "value": "`${tempVars(\"rekrutacja\")[0]}`",
+                      "name": "Odpowiedź 1:",
+                      "value": "`${tempVars(\"rekru1\")}`",
                       "inline": "true"
                     },
                     {
-                      "name": "Jak masz na imię:",
-                      "value": "`${tempVars(\"rekrutacja23\")}`",
+                      "name": "Odpowiedź 2",
+                      "value": "`${tempVars(\"rekru2\")}`",
                       "inline": "true"
                     },
                     {
-                      "name": "Dlaczego akurat ty:",
-                      "value": "`${tempVars(\"rekrutacja\")[2]}`",
+                      "name": "Odpowiedź 3",
+                      "value": "`${tempVars(\"rekru3\")}`",
                       "inline": "true"
                     },
                     {
-                      "name": "Na jaką range zasługujesz?",
-                      "value": "`${tempVars(\"rekrutacja\")[3]}`",
+                      "name": "Odpowiedź 4",
+                      "value": "`${tempVars(\"rekru4\")}`",
+                      "inline": "true"
+                    },
+                    {
+                      "name": "Odpowiedź 5",
+                      "value": "`${tempVars(\"rekru5\")}`",
                       "inline": "true"
                     }
                   ],
                   "author": "Rekrutacja:",
                   "authorUrl": "",
-                  "authorIcon": "${tempVars(\"iconserv\")}",
+                  "authorIcon": "",
                   "footerText": "Napisano!",
-                  "footerIconUrl": "${tempVars(\"iconserv\")}"
+                  "footerIconUrl": "${tempVars(\"icon\")}"
                 }
               ],
               "reply": true,
@@ -164,7 +184,7 @@
               "dontSend": false,
               "editMessage": "0",
               "editMessageVarName": "",
-              "storage": "2",
+              "storage": "3",
               "varName2": "pytania",
               "name": "Send Message"
             }
@@ -185,9 +205,9 @@
           "fields": [],
           "author": "Rekrutacja",
           "authorUrl": "",
-          "authorIcon": "${tempVars(\"icona serwera\")}",
+          "authorIcon": "${tempVars(\"icon1\")}",
           "footerText": "${server.name}",
-          "footerIconUrl": "${tempVars(\"icona serwera\")}"
+          "footerIconUrl": "${tempVars(\"icon1\")}"
         }
       ],
       "reply": true,
@@ -202,5 +222,5 @@
       "name": "Send Message"
     }
   ],
-  "comType": "0"
+  "comType": "4"
 }
