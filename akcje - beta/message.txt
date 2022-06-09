@@ -1,0 +1,120 @@
+``
+{
+  "name": "gban",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "FFhHy",
+  "actions": [
+    {
+      "info": "1",
+      "find": "tak_gif",
+      "storage": "1",
+      "varName": "tak_gif",
+      "name": "Find Custom Emoji"
+    },
+    {
+      "info": "1",
+      "find": "nie_gif",
+      "storage": "1",
+      "varName": "nie_gif",
+      "name": "Find Custom Emoji"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "condition": "1",
+      "comparison": "3",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "gban",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check Member Data"
+    },
+    {
+      "title": "${tempVars(\"tak_gif\")} ***Ten użytkownik juz posiada globalną blokadę!***",
+      "author": "",
+      "color": "GREEN",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "xd",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "xd",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "gban",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "${tempVars(\"nie_gif\")} ***Nadano globalną blokadę użytkownikowi; ``${tempVars(\"username\")}``***",
+      "author": "",
+      "color": "RED",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "xdd",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "xdd",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "4",
+  "parameters": [
+    {
+      "name": "id",
+      "description": "",
+      "type": "STRING",
+      "required": true,
+      "choices": null
+    }
+  ]
+}
+``
