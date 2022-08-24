@@ -1,0 +1,1 @@
+Czytaj uważnie opisy parametrów!
