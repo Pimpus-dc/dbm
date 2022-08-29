@@ -3,7 +3,7 @@
   "permissions": "NONE",
   "permissions2": "NONE",
   "restriction": "1",
-  "_id": "qdNhr",
+  "_id": "XRYcW",
   "actions": [
     {
       "server": "0",
@@ -22,7 +22,7 @@
       "name": "Store Server Info"
     },
     {
-      "server": "101",
+      "server": "0",
       "varName": "957672571044761680",
       "info": "2",
       "storage": "1",
@@ -30,7 +30,7 @@
       "name": "Store Server Info"
     },
     {
-      "server": "101",
+      "server": "0",
       "varName": "957672571044761680",
       "info": "5",
       "storage": "1",
@@ -170,6 +170,14 @@
       "server": "0",
       "varName": "",
       "dataName": "ticket.on.off",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "ticket.sprawdzanie",
       "changeType": "0",
       "value": "1",
       "name": "Control Server Data"
