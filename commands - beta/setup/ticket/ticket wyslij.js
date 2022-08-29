@@ -3,7 +3,7 @@
   "permissions": "NONE",
   "permissions2": "NONE",
   "restriction": "1",
-  "_id": "tlbtq",
+  "_id": "cTMVB",
   "actions": [
     {
       "server": "0",
@@ -22,7 +22,7 @@
       "name": "Store Server Info"
     },
     {
-      "server": "101",
+      "server": "0",
       "varName": "957672571044761680",
       "info": "2",
       "storage": "1",
@@ -30,7 +30,7 @@
       "name": "Store Server Info"
     },
     {
-      "server": "101",
+      "server": "0",
       "varName": "957672571044761680",
       "info": "5",
       "storage": "1",
@@ -43,6 +43,41 @@
       "storage": "1",
       "varName2": "bot.pikatchu",
       "name": "Get Bot as Member"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "ticket.sprawdzanie",
+      "comparison": "1",
+      "value": "1",
+      "branch": {
+        "iftrue": "3",
+        "iffalse": "0",
+        "iftrueVal": "2"
+      },
+      "name": "Check Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Błąd: Nie ustawiłeś*aś `/setup ticket`",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "member": "2",
@@ -179,22 +214,6 @@
       "name": "Control Server Data"
     },
     {
-      "server": "0",
-      "varName": "",
-      "dataName": "kolor.ticket",
-      "changeType": "0",
-      "value": "slashParams(\"kolor\")",
-      "name": "Control Server Data"
-    },
-    {
-      "server": "0",
-      "varName": "",
-      "dataName": "title.ticket",
-      "changeType": "0",
-      "value": "slashParams(\"tytuł\")",
-      "name": "Control Server Data"
-    },
-    {
       "storage": "1",
       "varName": "modal.info",
       "branches": [
@@ -234,6 +253,15 @@
               "defaultVal": "0",
               "storage": "1",
               "varName2": "title",
+              "name": "Store Server Data"
+            },
+            {
+              "server": "0",
+              "varName": "",
+              "dataName": "ticket.kolor",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "kolor",
               "name": "Store Server Data"
             },
             {
@@ -502,7 +530,7 @@
                 {
                   "title": "",
                   "url": "",
-                  "color": "${slashParams(\"kolor\")}",
+                  "color": "${tempVars(\"kolor\")}",
                   "timestamp": "false",
                   "imageUrl": "",
                   "thumbUrl": "",
@@ -564,6 +592,15 @@
               "defaultVal": "0",
               "storage": "1",
               "varName2": "title",
+              "name": "Store Server Data"
+            },
+            {
+              "server": "0",
+              "varName": "",
+              "dataName": "ticket.kolor",
+              "defaultVal": "0",
+              "storage": "1",
+              "varName2": "kolor",
               "name": "Store Server Data"
             },
             {
@@ -816,7 +853,7 @@
                 {
                   "title": "",
                   "url": "",
-                  "color": "${slashParams(\"kolor\")}",
+                  "color": "${tempVars(\"kolor\")}",
                   "timestamp": "false",
                   "imageUrl": "",
                   "thumbUrl": "",
@@ -866,13 +903,6 @@
     {
       "name": "tytuł",
       "description": "podaj tytułembeda",
-      "type": "STRING",
-      "required": true,
-      "choices": null
-    },
-    {
-      "name": "kolor",
-      "description": "kolor embeda",
       "type": "STRING",
       "required": true,
       "choices": null
