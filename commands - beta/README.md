@@ -1,3 +1,3 @@
 # Komendy
 
-Tutaj znajdziesz komendy do __Disocrd bot maker beta__! 
+Tutaj znajdziesz komendy do __Disocrd bot maker__! 
