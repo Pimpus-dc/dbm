@@ -1,0 +1,28 @@
+{
+  "name": "dbp-games",
+  "version": "2.0.1",
+  "description": "Play games or watch YouTube videos together on Discord! More than 18 games available!",
+  "main": "index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gotowka/discord-gamecord-pl"
+  },
+  "keywords": [
+    "discord-games",
+    "discordgames",
+    "discord",
+    "games",
+    "discord bots poland",
+    "DBP"
+  ],
+  "author": "RemyK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gotowka/discord-gamecord-pl/issues"
+  },
+  "homepage": "https://github.com/Gotowka/discord-gamecord-pl#readme"
+}
